@@ -1,0 +1,235 @@
+@font-face {
+    font-family: lakeshore1;
+    src: url("fonts/LAKESHOR-webfont.svg") format("svg");
+    src: url("fonts/LAKESHOR-webfont.woff") format("woff");
+}
+@font-face {
+    font-family: airstream;
+    src: url("fonts/Airstream-webfont.svg") format("svg");
+    src: url("fonts/Airstream-webfont.woff") format("woff");
+}
+.settings-list{
+    list-style: none;
+    overflow-y: auto;
+    max-height: 32vh;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+.logo{
+    font-family: lakeshore1;
+    font-size: 7vw;
+    text-transform: uppercase;
+    background-color: aquamarine;
+    text-align: center;
+    color: cornflowerblue;
+    margin-top: 2vw;
+}
+.main-header{
+    margin-top: 2vw;
+}
+.settings-image{
+    width: 28vw;
+    height: 19vw;
+    display: block;
+}
+.settings-title{
+    display: block;
+    text-align: center;
+    font-size: 4vw;
+    background-color: aquamarine;
+    color: black;
+}
+.settinngs-item:hover{
+    transform: scale(1.1);
+}
+a{
+    text-decoration: none;
+}
+.settinngs-item{
+    border: solid 2px lawngreen;
+    margin-top: 3vw;
+
+}
+body{
+    background-color: lightcyan;
+    display: flex;
+    flex-direction: column;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /*possibility for grow*/
+    justify-content: space-around;
+    align-items: center;
+}
+.detail-frame{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.detail-image{
+    width: 85vw;
+    height: 70vw;
+}
+.detail-title{
+font-family: airstream;
+    background-color: lightgreen;
+    color: dodgerblue;
+    position: absolute;
+    font-size: 6vw;
+    bottom: 1vw;
+    left: 5vw;
+}
+.detail-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    margin-top: -10vw;
+    align-items: center;
+    transition: 3s;
+}
+#hide-buttom{
+    position: absolute;
+    top: -0.1vw;
+    right: 0;
+}
+.hidden.detail-container {
+    display: none;
+}
+body,html{
+    height: 100%;
+    margin: 0;
+}
+.hidden.settings-list {
+    flex-direction: column;
+    max-height: 80vh;
+    overflow-y: auto;
+    flex-wrap: nowrap;
+    margin-top: -10vw;
+}
+.hidden .settings-image {
+    width: 40vw;
+    height: 28vw;
+}
+.hidden .settings-item {
+    max-width: 40vw;
+}
+@media (orientation: landscape){
+    #hide-buttom{
+        position: absolute;
+        top: 0vw;
+        right: 0;
+    }
+    .main-content{
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 6vw;
+    }
+    .hidden.settings-list{
+        flex-direction: row;
+        max-height: 80vh;
+        overflow-y: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 1.5vw;
+        margin-left: -6vw;
+    }
+    .hidden .settings-image{
+        width: 20vw;
+        height: 15vw;
+    }
+    .hidden .settinngs-item {
+        max-width: 20vw;
+    }
+    .settings-list{
+        flex-direction: column;
+        order: -1;
+        flex-wrap: nowrap;
+        max-height: 42.5vw;
+        overflow-y: auto;
+        justify-content: left;
+        margin-top: 10px;
+        margin-left: 0vw;
+    }
+    .settinngs-item{
+        margin-top: 0;
+        border-radius: 2px;
+        margin-top: 2px;
+    }
+    .settinngs-item+.settinngs-item{
+        margin-top: 2px;
+    }
+    .logo{
+        margin-top: -1vw;
+        margin-bottom: 0;
+        margin-right: 0;
+        font-size: 3.2vw;
+        border-radius: 3px;
+    }
+    .settings-image{
+        height: 10vw;
+        width: 14vw;
+    }
+    .settings-title{
+        font-size: 2vw;
+    }
+    .detail-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 1;
+        align-items: center;
+        margin-top: 0;
+    }
+    .detail-frame{
+        flex-grow: 1;
+    }
+    .detail-image{
+        margin-top: 0px;
+        width: 59vw;
+        height: 42.5vw;
+    }
+    .detail-title{
+        font-size: 3vw;
+        left: -10px;
+        font-style: italic;
+        bottom: 10px;
+        border-radius: 2px;
+    }
+}
+@media (min-width: 950px) {
+    #hide-buttom{
+        position: absolute;
+        top: 0.7vw;
+        right: 0;
+    }
+    .logo{
+        margin-top: -2vw;
+    }
+    .settings-list{
+        height: 38.7vw;
+        margin-top: 10px;
+    }
+    .detail-image{
+        margin-top: 10px;
+        width: 52vw;
+        height: 39vw;
+    }
+    .settings-image{
+        height: 8vw;
+        width: 12vw;
+    }
+    .settings-title{
+        font-size: 1.1vw;
+    }
+}
+.is-tiny{
+    transform: scale(0.001);
+    transition: 5s;
+}
