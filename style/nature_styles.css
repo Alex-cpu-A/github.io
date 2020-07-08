@@ -231,5 +231,5 @@ body,html{
 }
 .is-tiny{
     transform: scale(0.001);
-    transition: 5s;
+    transition: 0s;
 }
