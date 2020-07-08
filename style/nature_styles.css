@@ -39,7 +39,7 @@
 .settings-title{
     display: block;
     text-align: center;
-    font-size: 4vw;
+    font-size: 3.6vw;
     background-color: aquamarine;
     color: black;
 }
@@ -177,7 +177,7 @@ body,html{
         width: 14vw;
     }
     .settings-title{
-        font-size: 2vw;
+        font-size: 1.8vw;
     }
     .detail-container{
         display: flex;
