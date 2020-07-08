@@ -111,7 +111,7 @@ body,html{
     max-height: 80vh;
     overflow-y: auto;
     flex-wrap: nowrap;
-    margin-top: -10vw;
+    margin-top: 0vw;
 }
 .hidden .settings-image {
     width: 40vw;
